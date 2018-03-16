@@ -13,3 +13,17 @@
 # What if elements of nums2 are stored on disk, and the memory 
 # is limited such that you cannot load all elements into the memory at once?
 
+
+class Solution:
+    def intersect(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        r=[]
+        for i in nums1:
+            if i in nums2:
+                r.append(i)
+                nums2.remove(i)
+        return r
