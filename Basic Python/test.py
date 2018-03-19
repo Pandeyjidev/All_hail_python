@@ -89,6 +89,8 @@ class test_data():
         arr[::] = [[arr[len(arr)-j-1][i] for j in range(len(arr[0]))] for i in range(len(arr))]
         # matrix[::]=[[matrix[len(matrix)-j-1][i] for j in range(len(matrix[0]))] for i in range(len(matrix))]
         print(arr)
+    def rotate_matrix_clockwise_ListComprehension(self,matrix):
+        matrix[::]=[[matrix[len(matrix)-j-1][i] for j in range(len(matrix[0]))] for i in range(len(matrix))]
     def rotate_left(self,s,count):
         s = s[count:len(s)+1] + s[:count]
         print(s)
