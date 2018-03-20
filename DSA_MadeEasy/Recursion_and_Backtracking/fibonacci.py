@@ -5,7 +5,8 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n-1) + fibonacci(n-2)
-
+        
+# Not recursive 
 def fibonacci2():
     a,b = 0,1
     while True:
