@@ -13,6 +13,11 @@ def wiggleSort2(lst):
             lst[i],lst[i+1] = lst[i+1],lst[i]
     return lst
 
+def wiggleSort3(self, nums):
+    nums.sort()
+    half = len(nums[::2])
+    nums[::2], nums[1::2] = nums[:half][::-1], nums[half:][::-1]
+
 nums = [3,5,2,1,6,4]
 print(wiggleSort(nums))
 print(wiggleSort2(nums))
